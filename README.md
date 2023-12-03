@@ -22,3 +22,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Coding TODO
+Add login 
+
+
+### AWS Fun
+See [Configuration Reference](https://cli.vuejs.org/config/).
