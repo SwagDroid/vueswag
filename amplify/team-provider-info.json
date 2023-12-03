@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vueswag-staging-15342-authRole",
+      "UnauthRoleArn": "arn:aws:iam::040012536344:role/amplify-vueswag-staging-15342-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::040012536344:role/amplify-vueswag-staging-15342-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-vueswag-staging-15342-deployment",
+      "UnauthRoleName": "amplify-vueswag-staging-15342-unauthRole",
+      "StackName": "amplify-vueswag-staging-15342",
+      "StackId": "arn:aws:cloudformation:us-east-1:040012536344:stack/amplify-vueswag-staging-15342/c961ca00-917e-11ee-be37-0e2413ff3439",
+      "AmplifyAppId": "d357wlly6nukz3"
+    }
+  }
+}
