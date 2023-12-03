@@ -1,9 +1,30 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-// yarn add aws-amplify
-import { Amplify } from "aws-amplify";
-import amplifyconfig from './amplifyconfiguration.json';
+ 
+// import amplifyconfig from './amplifyconfiguration.json';
 
-Amplify.configure(amplifyconfig);
+// Amplify.configure(amplifyconfig);
 
-createApp(App).mount('#app')
+ 
+import { createApp } from "vue";
+import { createRouter, createWebHashHistory } from "vue-router";
+
+import App from "./App.vue";
+
+import Home from "./views/Home.vue";
+import About from "./views/About.vue";
+import UserProfile from "./views/UserProfile.vue"
+
+const routes = [
+  { path: "/", component: Home },
+  { path: "/about", component: About },
+  { path: "/userprofile", component: UserProfile },
+];
+// Create the router instance
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes,
+});
+
+const app = createApp(App);
+
+app.use(router);
+app.mount("#app");
