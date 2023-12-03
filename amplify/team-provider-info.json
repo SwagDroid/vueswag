@@ -1,15 +1,29 @@
 {
-  "staging": {
+  "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-vueswag-staging-15342-authRole",
-      "UnauthRoleArn": "arn:aws:iam::040012536344:role/amplify-vueswag-staging-15342-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::040012536344:role/amplify-vueswag-staging-15342-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-vueswag-staging-15342-deployment",
-      "UnauthRoleName": "amplify-vueswag-staging-15342-unauthRole",
-      "StackName": "amplify-vueswag-staging-15342",
-      "StackId": "arn:aws:cloudformation:us-east-1:040012536344:stack/amplify-vueswag-staging-15342/c961ca00-917e-11ee-be37-0e2413ff3439",
-      "AmplifyAppId": "d357wlly6nukz3"
+      "AuthRoleName": "amplify-amplifyauthapp-dev-232458-authRole",
+      "UnauthRoleArn": "arn:aws:iam::550014620903:role/amplify-amplifyauthapp-dev-232458-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::550014620903:role/amplify-amplifyauthapp-dev-232458-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-amplifyauthapp-dev-232458-deployment",
+      "UnauthRoleName": "amplify-amplifyauthapp-dev-232458-unauthRole",
+      "StackName": "amplify-amplifyauthapp-dev-232458",
+      "StackId": "arn:aws:cloudformation:eu-north-1:550014620903:stack/amplify-amplifyauthapp-dev-232458/1b975070-fa5c-11ed-b644-0a3d14e35b4a",
+      "AmplifyAppId": "dzfush7q4mqri"
+    },
+    "categories": {
+      "auth": {
+        "amplifyauthapp4d491d3b": {}
+      },
+      "api": {
+        "amplifyauthapp": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dzfush7q4mqri",
+          "type": "manual"
+        }
+      }
     }
   }
 }

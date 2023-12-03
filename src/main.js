@@ -1,30 +1,21 @@
- 
-// import amplifyconfig from './amplifyconfiguration.json';
+import { createApp } from 'vue';
+import App from './App.vue';
+import { createPinia } from 'pinia';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faGoogle } from '@fortawesome/free-brands-svg-icons'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import VerifyModel from './Components/TodoCRUD/VerifyModel.vue'
+library.add(faUserSecret,faGoogle)
 
-// Amplify.configure(amplifyconfig);
+import { Amplify } from 'aws-amplify';
+import awsconfig from './awsUpdateConfig';
 
- 
-import { createApp } from "vue";
-import { createRouter, createWebHashHistory } from "vue-router";
+Amplify.configure(awsconfig);
 
-import App from "./App.vue";
-
-import Home from "./views/Home.vue";
-import About from "./views/About.vue";
-import UserProfile from "./views/UserProfile.vue"
-
-const routes = [
-  { path: "/", component: Home },
-  { path: "/about", component: About },
-  { path: "/userprofile", component: UserProfile },
-];
-// Create the router instance
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes,
-});
-
-const app = createApp(App);
-
-app.use(router);
-app.mount("#app");
+const app = createApp(App)
+// app.useComponent('font-awesome-icon', FontAwesomeIcon)
+app.component('font-awesome-icon', FontAwesomeIcon);
+app.component('verify-model', VerifyModel);
+app.use(createPinia())
+app.mount('#app')

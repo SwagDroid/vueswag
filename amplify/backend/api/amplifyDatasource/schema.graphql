@@ -1,9 +1,0 @@
-type Todo @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  name: String!
-  description: String
-  email: AWSEmail
-  qty: Int
-  Total: Float
-  Percent: Float
-}
